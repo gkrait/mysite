@@ -1,21 +1,17 @@
-
-title: My Resume
-url: 'http://junlulocky.com'
-baseurl: '' #change it according to your repository name
-
-
-
-# Profile information
-yourname: Dr. George Krait  ## put your name
-title: 'Research &amp; Development Engineer'  ## your title
+---
+title: Research &amp; Development Engineer
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+url: http://junlulocky.com
+baseurl: ''
+yourname: Dr. George Krait
 location: Nancy, France
-
-
-## Social Profiles
-facebook: https://www.facebook.com/george.krait/ ## your facebook account url
-linkedin: https://www.linkedin.com/in/george-krait-b86a3958/  ## your linkedin account url
-github: https://github.com/gkrait/ ## you dribbble account url
-
-
-
-# Update all the sections by editing the files inside _includes folder.
+facebook: https://www.facebook.com/george.krait/
+linkedin: https://www.linkedin.com/in/george-krait-b86a3958/
+github: https://github.com/gkrait/
