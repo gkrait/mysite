@@ -13236,8 +13236,7 @@ img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!importan
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Isolating_singularities">Isolating_singularities<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Isolating_singularities">¶</a></h1><p>This module contains the implementation of the algorithms 
-introduced in <a href="https://hal.archives-ouvertes.fr/hal-02612412">HAL</a>. It basically concerns isolating the singularities of the  plane   projection of a generic curve embedded in <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 1.432em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.313em, 1001.19em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="msubsup" id="MathJax-Span-3"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.72em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="texatom" id="MathJax-Span-4"><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 0.777em;"><span class="mi" id="MathJax-Span-7" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">n</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">R</mi></mrow><mi>n</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-1">\mathbb{R}^n</script>.</p>
+<h1 id="Isolating_singularities">Isolating_singularities<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Isolating_singularities">¶</a></h1><p>Motivated by the problem of certified drawing of plane curves, this software is a Python implementation of the algorithms presented in  <a href="https://www.sciencedirect.com/science/article/pii/S0377042721001734">[1]</a>. It basically concerns isolating the <a href="https://en.wikipedia.org/wiki/Singular_point_of_a_curve">singularities</a> of the  plane projection of a generic curve embedded in <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 1.432em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.313em, 1001.19em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="msubsup" id="MathJax-Span-3"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.72em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="texatom" id="MathJax-Span-4"><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 0.777em;"><span class="mi" id="MathJax-Span-7" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">n</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">R</mi></mrow><mi>n</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-1">\mathbb{R}^n</script>. This type of curves appears naturally in robotics applications and visualization. We present in <a href="https://www.sciencedirect.com/science/article/pii/S0377042721001734">[1, Section 6]</a> some experiments, some of which are not reachable by other methods.  The software can be dowloaded from its <a href="https://github.com/gkrait/Isolating_singularities">GitHub</a> page. </p>
 <h2 id="Main-functions">Main functions<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Main-functions">¶</a></h2><p>In the following, by an interval we mean a list <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-8" style="width: 2.503em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.086em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.729em, 1002.03em, 2.92em, -999.997em); top: -2.557em; left: 0em;"><span class="mrow" id="MathJax-Span-9"><span class="mo" id="MathJax-Span-10" style="font-family: STIXGeneral-Regular;">[</span><span class="mi" id="MathJax-Span-11" style="font-family: STIXGeneral-Italic;">a</span><span class="mo" id="MathJax-Span-12" style="font-family: STIXGeneral-Regular;">,</span><span class="mi" id="MathJax-Span-13" style="font-family: STIXGeneral-Italic; padding-left: 0.182em;">b</span><span class="mo" id="MathJax-Span-14" style="font-family: STIXGeneral-Regular;">]</span></span><span style="display: inline-block; width: 0px; height: 2.562em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></math></span></span><script type="math/tex" id="MathJax-Element-2">[a,b]</script> of floats <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-15" style="width: 1.729em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.432em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.729em, 1001.43em, 2.86em, -999.997em); top: -2.557em; left: 0em;"><span class="mrow" id="MathJax-Span-16"><span class="mi" id="MathJax-Span-17" style="font-family: STIXGeneral-Italic;">a</span><span class="mo" id="MathJax-Span-18" style="font-family: STIXGeneral-Regular;">,</span><span class="mi" id="MathJax-Span-19" style="font-family: STIXGeneral-Italic; padding-left: 0.182em;">b</span></span><span style="display: inline-block; width: 0px; height: 2.562em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.211em; border-left: 0px solid; width: 0px; height: 1.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>,</mo><mi>b</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">a,b</script> that represent the lower and upper bounds respectively. By a box we mean a list of intervals.</p>
 <h3 id="1)-enclosing_boxes(system-,-Box-,-X-,-eps_min=0.001,eps_max=0.1)">1) enclosing_boxes(system , Box , X , eps_min=0.001,eps_max=0.1)<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#1)-enclosing_boxes(system-,-Box-,-X-,-eps_min=0.001,eps_max=0.1)">¶</a></h3><p>This function returns a list of two lists: The first one is a list of boxes in <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-20" style="width: 1.432em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.313em, 1001.19em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-21"><span class="msubsup" id="MathJax-Span-22"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.72em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="texatom" id="MathJax-Span-23"><span class="mrow" id="MathJax-Span-24"><span class="mi" id="MathJax-Span-25" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 0.777em;"><span class="mi" id="MathJax-Span-26" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">n</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">R</mi></mrow><mi>n</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-4">\mathbb{R}^n</script> that cover a smooth part of the curve (more precisely, where the used solver <a href="http://www.ibex-lib.org/doc/solver.html">IbexSolve</a> succeeds to certify the smoothness). The second one contains boxes where the used solver (<a href="http://www.ibex-lib.org/doc/solver.html">IbexSolve</a>) fails to certify the smoothness of the curve.</p>
 <h4 id="Parameters">Parameters<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Parameters">¶</a></h4><h5 id="system">system<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#system">¶</a></h5><p>A string that is the name of the txt file which contains the equations that define the curve.</p>
@@ -13313,6 +13312,7 @@ introduced in <a href="https://hal.archives-ouvertes.fr/hal-02612412">HAL</a>. I
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
+
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="ploting_boxes(certified_boxes,-uncer_boxes,-var=[0,1],-B=[-[-20,20]-,-[-20,20]-],-a=1,-b=10,-nodes=-[],-cusps=[-]-)">ploting_boxes(certified_boxes, uncer_boxes, var=[0,1], B=[ [-20,20] , [-20,20] ], a=1, b=10, nodes= [], cusps=[ ] )<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#ploting_boxes(certified_boxes,-uncer_boxes,-var=[0,1],-B=[-[-20,20]-,-[-20,20]-],-a=1,-b=10,-nodes=-[],-cusps=[-]-)">¶</a></h3><p>This function plots a plane projection of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/msub&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-27" style="width: 7.265em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.015em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.729em, 1005.96em, 2.92em, -999.997em); top: -2.557em; left: 0em;"><span class="mrow" id="MathJax-Span-28"><span class="mi" id="MathJax-Span-29" style="font-family: STIXGeneral-Italic;">e</span><span class="mi" id="MathJax-Span-30" style="font-family: STIXGeneral-Italic;">n</span><span class="mi" id="MathJax-Span-31" style="font-family: STIXGeneral-Italic;">c</span><span class="mi" id="MathJax-Span-32" style="font-family: STIXGeneral-Italic;">l<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-33" style="font-family: STIXGeneral-Italic;">o</span><span class="mi" id="MathJax-Span-34" style="font-family: STIXGeneral-Italic;">s</span><span class="mi" id="MathJax-Span-35" style="font-family: STIXGeneral-Italic;">i</span><span class="mi" id="MathJax-Span-36" style="font-family: STIXGeneral-Italic;">n</span><span class="msubsup" id="MathJax-Span-37"><span style="display: inline-block; position: relative; width: 0.896em; height: 0px;"><span style="position: absolute; clip: rect(3.396em, 1000.48em, 4.348em, -999.997em); top: -3.985em; left: 0em;"><span class="mi" id="MathJax-Span-38" style="font-family: STIXGeneral-Italic;">g</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -3.807em; left: 0.479em;"><span class="mi" id="MathJax-Span-39" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">c</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span><span class="mi" id="MathJax-Span-40" style="font-family: STIXGeneral-Italic;">u</span><span class="mi" id="MathJax-Span-41" style="font-family: STIXGeneral-Italic;">r<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-42" style="font-family: STIXGeneral-Italic;">v</span><span class="mi" id="MathJax-Span-43" style="font-family: STIXGeneral-Italic;">e</span></span><span style="display: inline-block; width: 0px; height: 2.562em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.218em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi><mi>n</mi><mi>c</mi><mi>l</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>n</mi><msub><mi>g</mi><mi>c</mi></msub><mi>u</mi><mi>r</mi><mi>v</mi><mi>e</mi></math></span></span><script type="math/tex" id="MathJax-Element-5">enclosing_curve</script> output.</p>
 <h4 id="Parameters">Parameters<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Parameters">¶</a></h4><h5 id="certified_boxes">certified_boxes<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#certified_boxes">¶</a></h5><p>A list of boxes that cover a smooth part of the curve certified by <a href="http://www.ibex-lib.org/doc/solver.html">IbexSolve</a>. The function plots the plane projection of this list in green.</p>
@@ -13421,6 +13421,7 @@ The second one is a list of boxes such that every box contains either one ordina
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
+
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nodes</span><span class="p">,</span> <span class="n">nodes_or_cusps</span><span class="o">=</span><span class="n">isos</span><span class="o">.</span><span class="n">enclosing_singularities</span><span class="p">(</span><span class="n">System</span><span class="p">,</span><span class="n">boxes</span><span class="p">,</span><span class="n">Box</span><span class="p">,</span><span class="n">X</span><span class="p">)</span>
 
 <span class="c1">#plotting the singularities</span>
@@ -13460,37 +13461,111 @@ The second one is a list of boxes such that every box contains either one ordina
 
 
 
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="ploting_boxes(certified_boxes,-uncer_boxes,-var=[0,1],-B=[-[-20,20]-,-[-20,20]-],-a=1,-b=10,-nodes=-[],-cusps=[-]-)">plotting_3D(boxes,Box,var=[0,1,2]):<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#ploting_boxes(certified_boxes,-uncer_boxes,-var=[0,1],-B=[-[-20,20]-,-[-20,20]-],-a=1,-b=10,-nodes=-[],-cusps=[-]-)">¶</a></h3><p>This function plots the 3D-projection of the given curve with respect to the three variables with the variables indexed by the elements of var. However, the drawing is not certified.</p>
+<h3 id="Example">Example<a class="anchor-link" href="https://htmtopdf.herokuapp.com/ipynbviewer/temp/ec3330abedfa3953c82de07364eb8d86/read_me.html?t=1621792172876#Example">¶</a></h3><p>The 3D-projection with respect to the first three variables.</p>
+
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isos</span><span class="o">.</span><span class="n">plotting_3D</span><span class="p">(</span><span class="n">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">], <span class="n">var</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="n">B</span><span class="o">=</span><span class="p">[[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,3.14</span>]*3])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<embed src="temp-162179215968303699_files/9.pdf" width="500" height="375">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .mySlides {display:none;}
 .bottom-three {
-     margin-bottom: 2cm;
+     margin-bottom: 1cm;
   }
 </style>
 
 
 <div class="w3-container">
   <h2>Additional Examples</h2>
-  <p class="bottom-three">Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+  <p class="bottom-three">Here are few additional examples from different types of curves.</p>
 </div>
 
 <div class="w3-content w3-display-container">
 
 <div class="w3-display-container mySlides">
-  <center> <img src="temp-162179215968303699_files/4.png" width="700" hight="700"> </center>
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-    High degree algebraic curve in R4
+  <center> <img src="temp-162179215968303699_files/4.png" width="54%" hight="62%"> </center>
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    2D-projection of a high-degree curve in <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 1.432em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.313em, 1001.19em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="msubsup" id="MathJax-Span-3"><span style="display: inline-block; position: relative; width: 1.193em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.72em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="texatom" id="MathJax-Span-4"><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 0.777em;"><span class="mi" id="MathJax-Span-7" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">n</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">R</mi></mrow><mi>n</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-1">\mathbb{R}^4</script>
+ 
   </div>
 </div>
 
+
+
+
+
 <div class="w3-display-container mySlides">
-  <center> <img src="temp-162179215968303699_files/5.jpg" width="700" hight="700"> </center>
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+  <center> <img src="temp-162179215968303699_files/5.png" width="74%" hight="70%"> </center>
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
     Haas Curve of Degree 11
   </div>
 </div>
 
+
+<div class="w3-display-container mySlides">
+  <center> <img src="temp-162179215968303699_files/7.jpg" width="73%" hight="70%"> </center>
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Nice curve! isn't it?
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <center> <img src="temp-162179215968303699_files/6.jpg" width="74%" hight="70%"> </center>
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    A curve defined by complicated polynomials
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+  <center> <img src="temp-162179215968303699_files/8.png" width="65%" hight="70%"> </center>
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    A complicated algebraic curve 
+  </div>
+</div>
 
 <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
 <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
