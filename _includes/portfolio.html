@@ -12,43 +12,22 @@
 
         <!-- #filters -->
         <ul id="filters" class="clearfix">
-            <li><span class="filter" active data-filter="catWeb catGraphic catMotion ProudOf">All</span></li>
-            <li><span class="filter"  data-filter="catWeb">Publication</span></li>
+            <li><span class="filter" active data-filter="catGraphic catWeb  catMotion InProgress ProudOf">All</span></li>
             <li><span class="filter" data-filter="catGraphic">Software</span></li>
+            <li><span class="filter"  data-filter="catWeb">Publication</span></li>
             <li><span class="filter" data-filter="catMotion">Teaching</span></li>
-            <li><span class="filter" data-filter="ProudOf">Most Proud of</span></li>
+            <li><span class="filter" data-filter="InProgress">In Progress</span></li>
+            <li><span class="filter" data-filter="ProudOf">Nice Memories</span></li>
             
         </ul>
         <!-- /#filters -->
-
-        <!-- #portfoliolist -->
         <div id="portfoliolist">
-
-            <!-- .portfolio -->
-          <!--    <div class="portfolio logo" data-cat="logo">	  -->
-                <!-- .portfolio-wrapper -->
-           <!--     <div class="portfolio-wrapper">		
-                    <a href="images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
-                        <img src="images/portfolio/1.jpg" alt="Visual Infography" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>  </div>     -->
-                <!-- /.portfolio-wrapper -->
-            	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
+        <!-- .portfolio -->
             <div class="portfolio catWeb" data-cat="catWeb">    
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">     
                     <a href="https://www.sciencedirect.com/science/article/pii/S0377042721001734" target="_blank">
-                        <img  height="310" src="images/portfolio/1.png" alt="Visual Infography" />
+                        <img  height="310" src="images/portfolio/1.png" title="George Krait, Sylvain Lazard, Guillaume Moroz, Marc Pouget, Certified numerical algorithm for isolating the singularities of the plane projection of generic smooth space curves, Journal of Computational and Applied Mathematics." alt=""  />
                         <div class="label">
                             <div class="label-text">
                                 <marquee width = "100%"  vspace="10" scrollamount="3">George Krait, Sylvain Lazard, Guillaume Moroz, Marc Pouget, Certified numerical algorithm for isolating the singularities of the plane projection of generic smooth space curves, Journal of Computational and Applied Mathematics. </marquee>
@@ -62,9 +41,31 @@
                     </a>
                 </div>
                 <!-- /.portfolio-wrapper -->
-            </div>      
+            </div>   
+        <!-- #portfoliolist -->
+        
+
+            <!-- .portfolio -->
+          <!--    <div class="portfolio logo" data-cat="logo">    -->
+                <!-- .portfolio-wrapper -->
+           <!--     <div class="portfolio-wrapper">     
+                    <a href="images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
+                        <img src="images/portfolio/1.jpg" alt="Visual Infography" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Project Name</a>
+                                <span class="text-category">Logo</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </a>
+                </div>  </div>     -->
+                <!-- /.portfolio-wrapper -->
+                
             <!-- /.portfolio -->
 
+               
+            <!-- /.portfolio -->
             <div class="portfolio ProudOf" data-cat="ProudOf">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper"> 
@@ -88,7 +89,7 @@
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
                     <a href="https://hal.archives-ouvertes.fr/hal-02612412" target="_blank">
-                        <img  height="310" src="images/portfolio/2.png" alt="Visual Infography" />
+                        <img  height="310" src="images/portfolio/2.png" title="George Krait, Sylvain Lazard, Guillaume Moroz, Marc Pouget. Isolating the singularities of the plane projection of a generic space curve. 2020." alt="Visual Infography" />
                         <div class="label">
                             <div class="label-text">
                                 <marquee>George Krait, Sylvain Lazard, Guillaume Moroz, Marc Pouget. Isolating the singularities of the plane projection of a generic space curve. 2020. </marquee>
@@ -252,11 +253,32 @@
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper"> 
                     <a href="https://drive.google.com/file/d/1zDoRjFF-_Xr2M_Lsaly7_W_CZ6HQn1Xs/view?usp=sharing" title="The report of my unforgettable defense." target="_blank"       >
-                          <img src="images/portfolio/phd2.jpeg" alt="" />                               
+                          <img src="images/portfolio/phd2.jpeg" height="310" alt="" />                               
                         <div class="label">
                             <div class="label-text">
                                 <a class="text-title" href="https://m.facebook.com/compsciencememes/photos/a.104125301117469/107636264099706/?type=3&source=48"     target="_blank">PhD defense report </a>
                                 <span class="text-category">(Image source)</span>
+
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.portfolio-wrapper -->
+            </div>  
+
+            <div class="portfolio InProgress" data-cat="InProgress">
+                <!-- .portfolio-wrapper -->
+                <div class="portfolio-wrapper"> 
+                    <a href="https://drive.google.com/file/d/1hon8EnVvK29cR-tgOfIQMQW2eJwIQCmn/view?usp=sharing" title="Designing and implementing an algorithm to translate Tla++ Spec into Cubicle input language." target="_blank"       >
+                          <div class="cycle-slideshow">
+                            <img src="images/portfolio/tla.png" height="310" alt="" />
+                            <img src="images/portfolio/cubicle.jpeg" height="310" alt="" />
+                       </div>                               
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title" href="https://m.facebook.com/compsciencememes/photos/a.104125301117469/107636264099706/?type=3&source=48"     target="_blank">TLA-Cubicle Translator</a>
+                                <span class="text-category">In Progress</span>
 
                             </div>
                             <div class="label-bg"></div>
