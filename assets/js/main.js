@@ -159,13 +159,12 @@ jQuery(document).ready(function($) {
     /* ---------------------------------------------------------------------- */
 
     // Needed variables
-    var $contactform = $('#contactform'),
-            $success = ' Your message has been sent. Thank you!';
+     
 
-    $contactform.submit(function() {
+ /*   $contactform.submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            url: "https://formspree.io/f/xyylwyvq",
             data: $(this).serialize(),
             success: function(msg)
             {
@@ -229,7 +228,7 @@ jQuery(document).ready(function($) {
             }
         });
         return false;
-    });
+    });*/
 
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- Portfolio ------------------------------ */
