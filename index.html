@@ -1,5 +1,7 @@
 ---
 layout: default
+comments: false
+
 ---
 
 <!--[if lt IE 7]>
@@ -10,6 +12,11 @@ layout: default
 <!-- <div id="preloader"><div id="spinner"></div></div> -->
 
 <!-- .slideshow -->
+
+<div id="particles-js"></div> 
+<!-- stats - count particles -->
+
+
 <ul class="cb-slideshow" id="cb_slideshow" style="display:none">
     <li><span>Image 01</span><div></div></li>
     <li><span>Image 02</span><div></div></li>
@@ -45,7 +52,7 @@ layout: default
                                
          <div class="image-holder one" id="pic_prof_1" style="display:block">
                 
-                <img class="head-image up circle" src="images/img/anima.gif" width="150" height="150" alt="" />
+                <img class="head-image up circle" src="images/img/anima2.gif" width="150" height="150" alt="" />
                 <!-- 
                 <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
                 <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
@@ -136,7 +143,9 @@ layout: default
       <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;"> 
             <span class="tite-list">contact</span>
             <i class="fa fa-envelope icon_menu"></i>  
-        </li>  
+        </li>
+        
+
 
         <a href="https://drive.google.com/file/d/1rLvWs9bQemPDCyIEe7Cj7TKrVG010YTc/view?usp=sharing" target="_blank" style="margin:0;float: left;" id="print"><i class="fa fa-print icon_print" target="_blank" ></i> </a>
         <a href="https://drive.google.com/file/d/1rLvWs9bQemPDCyIEe7Cj7TKrVG010YTc/view?usp=sharing"  target="_blank" style="margin:0;float: left;" id="downlowd" ><i class="fa fa-download icon_print"></i> </a>
@@ -161,6 +170,7 @@ layout: default
  {% include /contact.html %} 
 
 
+
 </div>
 <!-- End #resp-tabs-container --> 
 
@@ -177,10 +187,17 @@ layout: default
 
 </div><!-- End container -->
 
+ <div class="count-particles"> 
+    <span class="js-count-particles"> </span>  
+     </div>
+ <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </section>
 <!-- End Content -->
 
-</div>
+
+
+
+
 <!-- End wrapper -->
 
 <!-- Switcher -->
