@@ -57,9 +57,65 @@ ul, li, nav {
     padding: 0;
     list-style: none;
 }
-body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; 
-    background-image: url('https://www.veed.io/download/73b8ba69-7b1e-4fe3-8ede-922a9cd13e37');
-    background-size: 50%; background-color: black; } 
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #ffff;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
 
 
 
@@ -628,7 +684,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #filters li span {
-    font-size: 2.2em;
+    font-size: 1.2em;
     display: block;
     padding:5px 20px;       
     text-decoration:none;
