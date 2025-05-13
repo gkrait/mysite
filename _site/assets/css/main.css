@@ -3321,3 +3321,42 @@ li h6 {
 div.ppt {
     display: none !important;
 }
+
+/* Resume section font sizes */
+#resume .attributes li h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#resume .attributes li h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#resume .attributes li p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+#resume .attributes li dl dd p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+#resume .skillbar-title span {
+    font-size: 14px;
+}
+
+#resume .skill-bar-percent {
+    font-size: 14px;
+}
+
+#resume .title_content .text_content {
+    font-size: 18px;
+}
+
+#resume .duration {
+    font-size: 14px;
+}
