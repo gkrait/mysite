@@ -1,22 +1,38 @@
----
+# Site settings
 title: AI Algorithm Developer
-timezone: UTC
+timezone: UTC # Specifies the timezone for the site.
+
+# Collections settings
+# Defines custom or standard collections and their properties.
 collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-url: http://junlulocky.com
-baseurl: ''
+  posts: # Default Jekyll collection for blog posts.
+    title: Posts # Title for the posts collection (can be used in templates).
+    output: true # Ensures posts are rendered as individual pages.
+  uploads: # Custom collection, likely for managing file uploads.
+    title: Uploads # Title for the uploads collection.
+    output: true # Ensures items in this collection are outputted (if they have front matter).
+
+# URL and Base URL settings
+# `url` is the main URL for your production site (e.g., https://example.com).
+# `baseurl` is the subpath of your site if hosted in a subdirectory (e.g., /blog).
+# For a site hosted at the root, baseurl should typically be an empty string or /.
+url: http://junlulocky.com # Production URL of the site.
+baseurl: '' # Set to the subpath if your site is in a subdirectory, e.g., /blog. Empty for root.
+
+# Author and location information (custom variables for use in templates)
 yourname: Dr. George Krait
 location: Oslo, Norway
+
+# Social media links (custom variables)
 facebook: https://www.facebook.com/george.krait/
 linkedin: https://www.linkedin.com/in/george-krait-b86a3958/
 github: https://github.com/gkrait/
 
+# Custom array variable. Its purpose is not defined here.
+# It might be used by a theme or for future site features.
 emptyArray: []
 
+# Comments configuration
+# Specifies settings for the commenting system, likely Disqus.
 comments:
-  receiver: https://gkrait.disqus.com/
+  receiver: https://gkrait.disqus.com/ # Disqus shortname or endpoint.
