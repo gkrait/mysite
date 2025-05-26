@@ -1,48 +1,33 @@
 <!-- .contact -->
 <div id="contact" class="content_2">
 
-    <h1 class="h-bloc">It's your turn ... tell me about You! </h1>
-
-
+    <h1 class="h-bloc">It's your turn ... tell me about You!</h1>
 
     <div class="row">
-
-
         <div class="col-lg-12">
             <div class="row" id="contact-user">
                 <div class="col-md-5">
                     <div class="contact-info">
-                        <!--<h3 class="main-heading"><span>Contact info</span></h3>-->
-
                         <div class="title_content" style="float: none;">
                             <div class="text_content">Contact info</div>
                             <div class="clear"></div>
                         </div>
-
                         <ul>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> Adress:</span>
-                                Oslo, Norway <br /><br /></li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span>
-                                gmatharab1991@gmail.com</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span>
-                                https://gkrait.github.io/mysite/</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> Skype:</span>
-                                live:georgekrait</li>
-                            <!--  <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i> G. Drive:</span> brown-s-gm@gmail.com</li>
-                        <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i> Skydrive:</span> brown-s-sk@hotmail.com</li> -->
+                            <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> Adress:</span> Oslo, Norway <br /></li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span> gmatharab1991@gmail.com</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span> https://gkrait.github.io/mysite/</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> Skype:</span> live:georgekrait</li>
+                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i> G. Drive:</span> brown-s-gm@gmail.com</li> -->
+                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i> Skydrive:</span> brown-s-sk@hotmail.com</li> -->
                         </ul>
                     </div>
                     <!-- /Contact Info -->
                     <div class="clear"></div>
 
-                    <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
-
                     <div class="title_content tiltle_contacts" style="float: none;">
                         <div class="text_content">Follow me</div>
                         <div class="clear"></div>
                     </div>
-
-
 
                     <div id="profile_social">
                         <a href="https://www.facebook.com/george.krait/"><i class="fa fa-facebook"></i></a>
@@ -50,65 +35,52 @@
                         <a href="https://github.com/gkrait/"><i class="fa fa-github"></i></a>
                         <div class="clear"></div>
                     </div>
-
-
-
                 </div>
 
-                <! <div class="col-md-7">
-                    <!-- Contact Form 
+                <!-- Contact Form Column (Currently Commented Out) -->
+                <!--
+                <div class="col-md-7">
                     <div class="title_content" style="float: none;">
                         <div class="text_content">Say Hello</div>
                         <div class="clear"></div>
                     </div>
-
                     <div class="contact-form">
-
-
-
-
                         <div id="contact-status"></div>
-                        <form action="https://formspree.io/f/xyylwyvq" method="POST" enctype="multipart/form-data"
-                            id="contactform">
+                        <form action="https://formspree.io/f/xyylwyvq" method="POST" enctype="multipart/form-data" id="contactform">
                             <p class="form-group" id="contact-name">
                                 <label for="name">Your Name</label>
-                                <input type="text" name="name" class="form-control name-contact" id="inputSuccess"
-                                    placeholder="Name..." />
+                                <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
                             </p>
                             <p class="form-group" id="contact-email">
                                 <label for="email">Your Email</label>
-                                <input type="email" name="_replyto" class="form-control email-contact" id="inputSuccess"
-                                    placeholder="Email..." />
+                                <input type="email" name="_replyto" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
                             </p>
-
                             <p class="form-group" id="contact-message">
                                 <label for="message">Your Message</label>
-                                <textarea name="message" cols="88" rows="6" class="form-control message-contact"
-                                    id="inputError" placeholder="Message..."></textarea>
+                                <textarea name="message" cols="88" rows="6" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
                             </p>
                             <input type="reset" name="reset" value="CLEAR" class="reset">
-
-
                             <section class="button-demo" style="display: inline-block;">
                                 <a href="index.html">
-                                    <button class="ladda-button submit send_email" name="submit" data-color="green"
-                                        data-style="expand-left">SEND MESSAGE</button>
+                                    <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
+                                </a>
                             </section>
-
                         </form>
-                    </div> -->
-                    <!-- /Contact Form -->
+                    </div>
+                </div>
+                -->
+                <!-- /Contact Form Column -->
             </div>
         </div>
     </div>
-
 </div>
+<!-- End .contact -->
 <script>
-    var form = document.getElementById("my-form");
+    var form = document.getElementById("contactform"); // Changed "my-form" to "contactform" to match the form's ID
 
     async function handleSubmit(event) {
         event.preventDefault();
-        var status = document.getElementById("my-form-status");
+        var status = document.getElementById("contact-status"); // Changed "my-form-status" to "contact-status"
         var data = new FormData(event.target);
         fetch(event.target.action, {
             method: form.method,
@@ -117,13 +89,19 @@
                 'Accept': 'application/json'
             }
         }).then(response => {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
+            if (status) {
+                status.innerHTML = "Thanks for your submission!";
+            }
+            if (form) {
+                form.reset();
+            }
         }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
+            if (status) {
+                status.innerHTML = "Oops! There was a problem submitting your form";
+            }
         });
     }
-    form.addEventListener("submit", handleSubmit)
+    if (form) {
+        form.addEventListener("submit", handleSubmit);
+    }
 </script>
-</div>
-<!-- End .contact -->
